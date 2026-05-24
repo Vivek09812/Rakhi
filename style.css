@@ -1,0 +1,373 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Poppins,sans-serif;
+overflow:hidden;
+background:linear-gradient(180deg,#ffd6ec,#fff);
+color:#ff1493;
+}
+
+/* LOADER */
+
+#loader{
+position:fixed;
+width:100%;
+height:100vh;
+background:#ffd6ec;
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:9999;
+}
+
+.loader-box{
+text-align:center;
+animation:pulse 2s infinite;
+}
+
+.loader-box h1{
+font-size:34px;
+font-family:Pacifico;
+}
+
+.loader-heart{
+font-size:70px;
+margin-top:20px;
+animation:float 2s infinite;
+}
+
+/* SCREEN */
+
+.screen{
+width:100%;
+height:100vh;
+display:none;
+justify-content:center;
+align-items:center;
+padding:20px;
+position:absolute;
+top:0;
+left:0;
+}
+
+.active{
+display:flex;
+animation:fade 1s;
+}
+
+/* GLASS */
+
+.glass{
+width:100%;
+max-width:420px;
+padding:30px;
+border-radius:35px;
+background:rgba(255,255,255,0.25);
+backdrop-filter:blur(15px);
+box-shadow:0 0 30px rgba(255,20,147,0.4);
+text-align:center;
+}
+
+/* TEXT */
+
+.main-title{
+font-size:44px;
+font-family:Pacifico;
+animation:glow 2s infinite alternate;
+}
+
+.subtitle{
+margin-top:15px;
+font-size:18px;
+}
+
+.small-text{
+margin-top:20px;
+}
+
+/* BUTTON */
+
+button{
+margin-top:25px;
+padding:15px 28px;
+border:none;
+border-radius:40px;
+background:#ff1493;
+color:white;
+font-size:18px;
+box-shadow:0 0 20px pink;
+transition:0.4s;
+}
+
+button:hover{
+transform:scale(1.07);
+}
+
+/* COUNTDOWN */
+
+#countdown{
+margin-top:25px;
+background:white;
+padding:20px;
+border-radius:25px;
+font-size:34px;
+font-weight:bold;
+box-shadow:0 0 20px pink;
+}
+
+/* GALLERY */
+
+.slider{
+margin-top:20px;
+position:relative;
+}
+
+.slide{
+width:100%;
+border-radius:25px;
+display:none;
+box-shadow:0 0 20px pink;
+}
+
+.activeSlide{
+display:block;
+animation:zoom 1s;
+}
+
+.dots{
+margin-top:15px;
+}
+
+.dot{
+width:12px;
+height:12px;
+border-radius:50%;
+background:#ffc0cb;
+display:inline-block;
+margin:5px;
+}
+
+.activeDot{
+background:#ff1493;
+}
+
+/* ENVELOPE */
+
+.envelope-box{
+text-align:center;
+}
+
+.envelope{
+font-size:120px;
+cursor:pointer;
+animation:float 3s infinite;
+}
+
+.letter{
+background:white;
+padding:25px;
+border-radius:30px;
+width:90%;
+max-width:400px;
+box-shadow:0 0 25px pink;
+text-align:center;
+}
+
+/* GIFT */
+
+.gift-box{
+font-size:120px;
+animation:float 3s infinite;
+cursor:pointer;
+}
+
+.gift-message{
+background:white;
+padding:25px;
+border-radius:30px;
+width:90%;
+max-width:380px;
+box-shadow:0 0 25px pink;
+text-align:center;
+font-size:22px;
+}
+
+/* BIRTHDAY */
+
+.birthday-title{
+font-size:42px;
+font-family:Pacifico;
+animation:glow 2s infinite alternate;
+}
+
+#cake{
+font-size:140px;
+cursor:pointer;
+transition:1s;
+}
+
+#cake.cut{
+transform:rotate(10deg) scale(1.2);
+}
+
+#candle{
+font-size:50px;
+}
+
+.wish-box{
+margin-top:25px;
+background:white;
+padding:25px;
+border-radius:25px;
+box-shadow:0 0 20px pink;
+line-height:1.7;
+}
+
+.final-line{
+margin-top:25px;
+font-size:26px;
+font-weight:bold;
+}
+
+.credits{
+margin-top:40px;
+font-size:18px;
+opacity:0.7;
+}
+
+/* PARTICLES */
+
+.hearts-container::before{
+content:"💖 💕 💗 💓";
+position:fixed;
+top:100%;
+left:0;
+width:100%;
+font-size:35px;
+animation:hearts 8s linear infinite;
+}
+
+.petals-container::before{
+content:"🌸 🌸 🌸 🌸";
+position:fixed;
+top:-20px;
+left:0;
+width:100%;
+font-size:30px;
+animation:petals 10s linear infinite;
+}
+
+.stars-container::before{
+content:"✨ ✨ ✨ ✨ ✨";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+font-size:25px;
+animation:stars 4s linear infinite;
+}
+
+/* FIREWORKS */
+
+#fireworks{
+font-size:40px;
+margin-bottom:20px;
+animation:glow 1s infinite alternate;
+}
+
+/* HIDDEN */
+
+.hidden{
+display:none;
+}
+
+/* ANIMATION */
+
+@keyframes fade{
+from{
+opacity:0;
+transform:scale(0.9);
+}
+to{
+opacity:1;
+transform:scale(1);
+}
+}
+
+@keyframes pulse{
+0%{
+transform:scale(1);
+}
+50%{
+transform:scale(1.05);
+}
+100%{
+transform:scale(1);
+}
+}
+
+@keyframes glow{
+from{
+text-shadow:0 0 10px pink;
+}
+to{
+text-shadow:0 0 30px hotpink;
+}
+}
+
+@keyframes float{
+0%{
+transform:translateY(0);
+}
+50%{
+transform:translateY(-20px);
+}
+100%{
+transform:translateY(0);
+}
+}
+
+@keyframes zoom{
+from{
+opacity:0;
+transform:scale(0.8);
+}
+to{
+opacity:1;
+transform:scale(1);
+}
+}
+
+@keyframes hearts{
+0%{
+transform:translateY(0);
+}
+100%{
+transform:translateY(-130vh);
+}
+}
+
+@keyframes petals{
+0%{
+transform:translateY(0) rotate(0deg);
+}
+100%{
+transform:translateY(120vh) rotate(360deg);
+}
+}
+
+@keyframes stars{
+0%{
+opacity:0.5;
+}
+50%{
+opacity:1;
+}
+100%{
+opacity:0.5;
+}
+}

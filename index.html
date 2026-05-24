@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Rakhi 💖</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- MUSIC -->
+<audio id="bgMusic" loop>
+  <source src="music.mp3" type="audio/mp3">
+</audio>
+
+<!-- LOADER -->
+<div id="loader">
+
+  <div class="loader-box">
+
+    <h1>
+      A Magical Surprise Is Loading 🎀
+    </h1>
+
+    <div class="loader-heart">
+      💖
+    </div>
+
+  </div>
+
+</div>
+
+<!-- PARTICLES -->
+<div class="hearts-container"></div>
+<div class="petals-container"></div>
+<div class="stars-container"></div>
+
+<!-- HOME -->
+<section class="screen active" id="home">
+
+  <div class="glass">
+
+    <h1 class="main-title">
+      Rakhi (Choti Behan) 💓
+    </h1>
+
+    <p class="subtitle">
+      A Princess Surprise Made With Love ✨
+    </p>
+
+    <button onclick="startWebsite()">
+      Enter Magic 🎀
+    </button>
+
+  </div>
+
+</section>
+
+<!-- COUNTDOWN -->
+<section class="screen" id="countdownScreen">
+
+  <div class="glass">
+
+    <h2>
+      Birthday Countdown ⏳
+    </h2>
+
+    <div id="countdown"></div>
+
+    <p class="small-text">
+      Every second is bringing us closer to your special day 💖
+    </p>
+
+    <button onclick="showGallery()">
+      Open Memories 📸
+    </button>
+
+  </div>
+
+</section>
+
+<!-- GALLERY -->
+<section class="screen" id="galleryScreen">
+
+  <div class="glass">
+
+    <h2>
+      Beautiful Memories 💕
+    </h2>
+
+    <div class="slider">
+
+      <img src="image1.jpg" class="slide activeSlide">
+
+      <img src="image2.jpg" class="slide">
+
+      <img src="image3.jpg" class="slide">
+
+    </div>
+
+    <div class="dots">
+
+      <span class="dot activeDot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+
+    </div>
+
+    <button onclick="showLetter()">
+      Open Secret Letter 💌
+    </button>
+
+  </div>
+
+</section>
+
+<!-- LETTER -->
+<section class="screen" id="letterScreen">
+
+  <div class="envelope-box">
+
+    <div class="envelope" onclick="openLetter()">
+      💌
+    </div>
+
+    <p>
+      Tap The Envelope ✨
+    </p>
+
+  </div>
+
+  <div class="letter hidden" id="letter">
+
+    <h2>
+      To My Cute Sister 💖
+    </h2>
+
+    <p id="typedText"></p>
+
+    <button onclick="showGift()">
+      Open Gift 🎁
+    </button>
+
+  </div>
+
+</section>
+
+<!-- GIFT -->
+<section class="screen" id="giftScreen">
+
+  <div class="gift-box-area">
+
+    <div class="gift-box" onclick="openGift()">
+      🎁
+    </div>
+
+    <p>
+      Tap Gift To Open 💖
+    </p>
+
+  </div>
+
+  <div class="gift-message hidden" id="giftMessage">
+
+    You are the cutest blessing of my life 😭💖
+
+    <button onclick="showBirthday()">
+      Final Surprise 🎂
+    </button>
+
+  </div>
+
+</section>
+
+<!-- BIRTHDAY -->
+<section class="screen" id="birthdayScreen">
+
+  <div id="lockedBirthday">
+
+    <div class="glass">
+
+      <h1>
+        Birthday Surprise Locked 🔒
+      </h1>
+
+      <p>
+        Wait Until 29 September 2026 🎀
+      </p>
+
+    </div>
+
+  </div>
+
+  <div id="birthdayContent" class="hidden">
+
+    <div id="fireworks"></div>
+
+    <h1 class="birthday-title">
+      Happy Birthday Rakhi 🎂💖
+    </h1>
+
+    <div id="candle">
+      🕯️
+    </div>
+
+    <div id="cake" onclick="cutCake()">
+      🎂
+    </div>
+
+    <button onclick="blowCandle()">
+      Blow Candle ✨
+    </button>
+
+    <div class="wish-box">
+
+      Happy Birthday, Rakhi! 🎉
+      You are the sweetest little sister and a very special part of my life.
+      Your smile brings happiness to everyone around you.
+      I am lucky to have a caring, kind, and loving sister like you.
+      May your birthday be filled with joy, laughter, and beautiful memories.
+      Always stay happy, confident, and strong.
+      Keep shining and achieving your dreams.
+      No matter what happens, I will always support and protect you.
+      Have an amazing birthday, little sister! ❤️
+
+    </div>
+
+    <div class="final-line">
+
+      Your Brother Will Always Support You And Protect You 🫶
+
+    </div>
+
+    <div class="credits">
+
+      Made With Love By Vivek 💖
+
+    </div>
+
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
